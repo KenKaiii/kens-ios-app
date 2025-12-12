@@ -2,7 +2,7 @@
 
 **Skip weeks of setup. Start building your app today.**
 
-A production-ready iOS starter template with everything you need to ship a real app. Built with SwiftUI and iOS 17+ best practices.
+A production-ready iOS starter template with everything you need to ship a real app.
 
 Created by **Ken Kai** | [YouTube @kenkaidoesai](https://youtube.com/@kenkaidoesai) | [Skool Community](https://www.skool.com/kenkai)
 
@@ -10,78 +10,89 @@ Created by **Ken Kai** | [YouTube @kenkaidoesai](https://youtube.com/@kenkaidoes
 
 ## What You Get
 
-- **Auth System** - Login, signup, forgot password, biometrics (Face ID/Touch ID)
-- **Onboarding Flow** - Beautiful page-based intro screens
-- **Network Layer** - Modern async/await API client with error handling
-- **Secure Storage** - Keychain for tokens, UserDefaults for preferences
-- **Database** - SwiftData ready for offline storage
-- **Theme System** - Dark/light mode that just works
-- **UI Components** - Buttons, loading states, error views, empty states
-- **Navigation** - Type-safe routing throughout the app
-- **Testing** - Unit tests + UI tests already configured
-- **Code Quality** - SwiftLint keeps your code clean
-
-## Who This Is For
-
-- Developers who want to skip boilerplate setup
-- Founders building their first iOS app
-- Anyone tired of starting from scratch every time
-
-## Requirements
-
-- Mac with **Xcode 15+** installed
-- iOS 17.0+ target
+- Auth System (login, signup, Face ID)
+- Onboarding Flow
+- Network Layer
+- Secure Storage
+- Database
+- Dark/Light Mode
+- UI Components
+- Navigation
+- Tests
 
 ---
 
-## Quick Start (5 minutes)
+## Prerequisites
 
-### Step 1: Get Homebrew
+You need a Mac. That's it. Follow these steps in order.
 
-Open Terminal and paste:
+### 1. Install Xcode (Required)
+
+1. Open **App Store** on your Mac
+2. Search "Xcode"
+3. Click **Get** (it's free, ~7GB download)
+4. Wait for it to install
+5. Open Xcode once, accept the license agreement
+
+### 2. Install Homebrew (Required)
+
+Open **Terminal** (search "Terminal" in Spotlight) and paste:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Already have Homebrew? Skip this.
+Press Enter and follow the prompts. This takes a few minutes.
 
-### Step 2: Install XcodeGen
+### 3. Install XcodeGen (Required)
+
+In Terminal, paste:
 
 ```bash
 brew install xcodegen
 ```
 
-### Step 3: Clone This Repo
+---
+
+## Get Started
+
+### Step 1: Download This Project
+
+In Terminal:
 
 ```bash
 git clone https://github.com/KenKaiii/kens-ios-app.git
 cd kens-ios-app
 ```
 
-### Step 4: Generate the Xcode Project
+### Step 2: Generate the Xcode Project
 
 ```bash
 xcodegen generate
 ```
 
-### Step 5: Open and Run
+### Step 3: Open in Xcode
 
 ```bash
 open BoilerplateApp.xcodeproj
 ```
 
-Press `Cmd + R` in Xcode to run the app.
+### Step 4: Run the App
+
+1. In Xcode, click the play button (▶️) at the top left
+2. Or press `Cmd + R`
+3. Pick a simulator (iPhone 15 recommended)
+4. The app will launch in the simulator
 
 ---
 
-## Make It Yours
+## Make It Your Own
 
-1. Open `project.yml`
-2. Change `name: BoilerplateApp` to your app name
-3. Change `bundleIdPrefix: com.yourcompany` to your identifier
-4. Run `xcodegen generate` again
-5. Done
+1. Open `project.yml` in any text editor
+2. Change `name: BoilerplateApp` to `name: YourAppName`
+3. Change `com.yourcompany` to your own (like `com.kenkai`)
+4. In Terminal, run `xcodegen generate` again
+5. Done - it's now your app
 
 ---
 
@@ -90,10 +101,10 @@ Press `Cmd + R` in Xcode to run the app.
 ```
 BoilerplateApp/
 ├── App/           # App startup
-├── Core/          # Infrastructure (network, storage, navigation)
-├── Features/      # Your app screens (Home, Settings, Auth, etc.)
-├── Services/      # Business logic (AuthService, etc.)
-└── Resources/     # Images, colors, assets
+├── Core/          # Infrastructure
+├── Features/      # Your screens
+├── Services/      # Business logic
+└── Resources/     # Images & assets
 ```
 
 ---
