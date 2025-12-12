@@ -55,7 +55,7 @@ brew install xcodegen
 ### Step 3: Clone This Repo
 
 ```bash
-git clone https://github.com/kenkai/kens-ios-app.git
+git clone https://github.com/KenKaiii/kens-ios-app.git
 cd kens-ios-app
 ```
 
