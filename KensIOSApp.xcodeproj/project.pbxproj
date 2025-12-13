@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -86,7 +86,7 @@
 		258C9DC73E35DC762E55E3B3 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		26FD30069C95A431A3B27247 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		2A164E6E4BDBCDFF49302462 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
-		36225B31DA0C62D5AE74E8A3 /* KensIOSApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = KensIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36225B31DA0C62D5AE74E8A3 /* KensIOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KensIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		426B63F7F69982FFCD384C61 /* KensIOSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KensIOSApp.entitlements; sourceTree = "<group>"; };
 		466EA7E8AE967B394436A643 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		4891E663BDB6744C0C4F6578 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		6C57F4AB04C8C3D980EDFEB7 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		6F13B15C39ACB4F66C946A0F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		7D7C16AA452F80C120221749 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		7F1401F12BA3F8365B218AAA /* KensIOSAppTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KensIOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1401F12BA3F8365B218AAA /* KensIOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KensIOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		813BE5835C77429F1F921B06 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 		8966F88339F31BB29E36B397 /* Task+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Extensions.swift"; sourceTree = "<group>"; };
 		95956BA604341AD745A38511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		D074040A83CCBAF6C8E6DAE6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D0BB0FFA8AE13BBC63C4986A /* KeychainManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManagerTests.swift; sourceTree = "<group>"; };
 		D99BDB8A96E5E2FF612389F8 /* CachedAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImage.swift; sourceTree = "<group>"; };
-		DC43B19E93241CAAA556D151 /* KensIOSAppUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KensIOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC43B19E93241CAAA556D151 /* KensIOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KensIOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE0EB57AEA5B3F05DADDB2A /* KensIOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KensIOSAppTests.swift; sourceTree = "<group>"; };
 		DDFAA95A9175D09784395E04 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		E150BF23846CA1333F90A91B /* FormValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
@@ -511,10 +511,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					02F5253012E9427463C9E5EE = {
-						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 					25E8477B36D94E6343EF627A = {
@@ -532,7 +531,6 @@
 			);
 			mainGroup = 81862D9613855C6CDA9BE26B;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -693,7 +691,7 @@
 				CODE_SIGN_ENTITLEMENTS = KensIOSApp/KensIOSApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 396M7LY29W;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = KensIOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -736,7 +734,7 @@
 				CODE_SIGN_ENTITLEMENTS = KensIOSApp/KensIOSApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 396M7LY29W;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = KensIOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -802,6 +800,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_VERSION = 5.0;
 			};
@@ -862,6 +861,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
 			};
