@@ -47,6 +47,7 @@ targets:
         TARGETED_DEVICE_FAMILY: "1,2"
         SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: true
         SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD: true
+        ENABLE_USER_SCRIPT_SANDBOXING: "NO"
     entitlements:
       path: KensIOSApp/KensIOSApp.entitlements
       properties:
