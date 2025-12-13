@@ -3,8 +3,8 @@
 
 # Paths to include during linting
 included:
-  - BoilerplateApp
-  - BoilerplateAppTests
+  - KensIOSApp
+  - KensIOSAppTests
 
 # Paths to exclude during linting
 excluded:
@@ -12,7 +12,7 @@ excluded:
   - Carthage
   - .build
   - DerivedData
-  - BoilerplateApp/Resources
+  - KensIOSApp/Resources
 
 # Enabled rules (on top of defaults)
 opt_in_rules:

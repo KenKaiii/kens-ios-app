@@ -108,11 +108,12 @@ public final class NetworkMonitor: ObservableObject {
 
 import SwiftUI
 
-private struct NetworkMonitorKey: EnvironmentKey {
-    @MainActor static let defaultValue: NetworkMonitor = .shared
+private struct NetworkMonitorKey: @preconcurrency EnvironmentKey {
+    @MainActor static let defaultValue = NetworkMonitor.shared
 }
 
 extension EnvironmentValues {
+    @MainActor
     public var networkMonitor: NetworkMonitor {
         get { self[NetworkMonitorKey.self] }
         set { self[NetworkMonitorKey.self] = newValue }

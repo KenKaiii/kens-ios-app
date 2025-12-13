@@ -4,7 +4,7 @@ import SwiftData
 /// Main entry point for the application
 /// Uses SwiftUI App lifecycle with SwiftData integration
 @main
-struct BoilerplateApp: App {
+struct KensIOSApp: App {
 
     // MARK: - Properties
 

@@ -1,9 +1,9 @@
-@testable import BoilerplateApp
+@testable import KensIOSApp
 import SwiftData
 import XCTest
 
-/// Main test suite for BoilerplateApp
-final class BoilerplateAppTests: XCTestCase {
+/// Main test suite for KensIOSApp
+final class KensIOSAppTests: XCTestCase {
 
     // MARK: - Properties
 

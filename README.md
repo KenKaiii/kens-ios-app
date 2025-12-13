@@ -1,4 +1,4 @@
-# iOS App Boilerplate
+# Ken's iOS App
 
 **Skip weeks of setup. Start building your app today.**
 
@@ -24,33 +24,13 @@ Created by **Ken Kai** | [YouTube @kenkaidoesai](https://youtube.com/@kenkaidoes
 
 ## Prerequisites
 
-You need a Mac. That's it. Follow these steps in order.
-
-### 1. Install Xcode (Required)
+You need a Mac with **Xcode** installed. That's it.
 
 1. Open **App Store** on your Mac
 2. Search "Xcode"
 3. Click **Get** (it's free, ~7GB download)
 4. Wait for it to install
-5. Open Xcode once, accept the license agreement
-
-### 2. Install Homebrew (Required)
-
-Open **Terminal** (search "Terminal" in Spotlight) and paste:
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Press Enter and follow the prompts. This takes a few minutes.
-
-### 3. Install XcodeGen (Required)
-
-In Terminal, paste:
-
-```bash
-brew install xcodegen
-```
+5. Open Xcode once and accept the license agreement
 
 ---
 
@@ -58,53 +38,51 @@ brew install xcodegen
 
 ### Step 1: Download This Project
 
-In Terminal:
+Open **Terminal** (search "Terminal" in Spotlight) and paste:
 
 ```bash
 git clone https://github.com/KenKaiii/kens-ios-app.git
 cd kens-ios-app
 ```
 
-### Step 2: Generate the Xcode Project
+### Step 2: Open in Xcode
 
 ```bash
-xcodegen generate
+open KensIOSApp.xcodeproj
 ```
 
-### Step 3: Open in Xcode
+### Step 3: Run the App
 
-```bash
-open BoilerplateApp.xcodeproj
-```
-
-### Step 4: Run the App
-
-1. In Xcode, click the play button (▶️) at the top left
+1. In Xcode, click the play button at the top left
 2. Or press `Cmd + R`
-3. Pick a simulator (iPhone 15 recommended)
+3. Pick a simulator (iPhone 16 recommended)
 4. The app will launch in the simulator
-
----
-
-## Make It Your Own
-
-1. Open `project.yml` in any text editor
-2. Change `name: BoilerplateApp` to `name: YourAppName`
-3. Change `com.yourcompany` to your own (like `com.kenkai`)
-4. In Terminal, run `xcodegen generate` again
-5. Done - it's now your app
 
 ---
 
 ## Project Structure
 
 ```
-BoilerplateApp/
+KensIOSApp/
 ├── App/           # App startup
 ├── Core/          # Infrastructure
 ├── Features/      # Your screens
 ├── Services/      # Business logic
 └── Resources/     # Images & assets
+```
+
+---
+
+## Advanced: Modifying Project Settings
+
+This project uses [XcodeGen](https://github.com/yonaskolb/XcodeGen) to manage project settings via `project.yml`. If you need to add new targets, change build settings, or modify the project structure:
+
+```bash
+# Install XcodeGen (one-time)
+brew install xcodegen
+
+# Regenerate the Xcode project after editing project.yml
+xcodegen generate
 ```
 
 ---

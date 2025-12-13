@@ -2,15 +2,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "BoilerplateApp",
+    name: "KensIOSApp",
     platforms: [
         .iOS(.v17),
         .macOS(.v14)
     ],
     products: [
         .library(
-            name: "BoilerplateApp",
-            targets: ["BoilerplateApp"]
+            name: "KensIOSApp",
+            targets: ["KensIOSApp"]
         )
     ],
     dependencies: [
@@ -19,9 +19,9 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "BoilerplateApp",
+            name: "KensIOSApp",
             dependencies: [],
-            path: "BoilerplateApp",
+            path: "KensIOSApp",
             exclude: ["Resources/Assets.xcassets"],
             swiftSettings: [
                 .enableUpcomingFeature("BareSlashRegexLiterals"),
@@ -33,9 +33,9 @@ let package = Package(
             ]
         ),
         .testTarget(
-            name: "BoilerplateAppTests",
-            dependencies: ["BoilerplateApp"],
-            path: "BoilerplateAppTests"
+            name: "KensIOSAppTests",
+            dependencies: ["KensIOSApp"],
+            path: "KensIOSAppTests"
         )
     ]
 )

@@ -1,7 +1,7 @@
 import XCTest
 
-/// UI Tests for BoilerplateApp
-final class BoilerplateAppUITests: XCTestCase {
+/// UI Tests for KensIOSApp
+final class KensIOSAppUITests: XCTestCase {
 
     // MARK: - Properties
 
@@ -119,7 +119,7 @@ final class BoilerplateAppUITests: XCTestCase {
 
 // MARK: - Accessibility Tests
 
-extension BoilerplateAppUITests {
+extension KensIOSAppUITests {
 
     func testAccessibilityLabels() {
         // Home tab should have accessibility label

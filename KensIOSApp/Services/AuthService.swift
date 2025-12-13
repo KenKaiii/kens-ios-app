@@ -173,13 +173,14 @@ final class AuthService: ObservableObject, AuthServiceProtocol {
 
     /// Refresh the access token
     func refreshToken() async throws {
-        guard let refreshToken = try? keychain.getString(for: .refreshToken) else {
+        guard keychain.exists(.refreshToken) else {
             throw AuthError.noRefreshToken
         }
 
         // Example API call - replace with your refresh endpoint
+        // let storedRefreshToken = try keychain.getString(for: .refreshToken)
         // let response = try await networkClient.request(
-        //     AuthAPI.refresh(token: refreshToken),
+        //     AuthAPI.refresh(token: storedRefreshToken),
         //     responseType: AuthResponse.self
         // )
 

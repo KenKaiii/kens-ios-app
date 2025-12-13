@@ -1,4 +1,4 @@
-@testable import BoilerplateApp
+@testable import KensIOSApp
 import XCTest
 
 /// Tests for KeychainManager

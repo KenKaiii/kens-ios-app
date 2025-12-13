@@ -6,7 +6,7 @@
 	<string>development</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.yourcompany.boilerplateapp</string>
+		<string>$(AppIdentifierPrefix)com.kenkai.kensiosapp</string>
 	</array>
 </dict>
 </plist>

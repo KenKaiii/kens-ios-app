@@ -24,11 +24,11 @@ struct AboutView: View {
                     .font(.system(size: 60))
                     .foregroundStyle(.tint)
 
-                Text("BoilerplateApp")
+                Text("Ken's iOS App")
                     .font(.title2)
                     .fontWeight(.semibold)
 
-                Text("A modern iOS app boilerplate built with SwiftUI")
+                Text("A modern iOS app built with SwiftUI")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
