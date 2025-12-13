@@ -572,7 +572,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint > /dev/null; then\n  cd \"$SRCROOT\"\n  swiftlint lint KensIOSApp\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "# Check common installation paths for SwiftLint\nif [ -f /opt/homebrew/bin/swiftlint ]; then\n  SWIFTLINT=/opt/homebrew/bin/swiftlint\nelif [ -f /usr/local/bin/swiftlint ]; then\n  SWIFTLINT=/usr/local/bin/swiftlint\nelif which swiftlint > /dev/null; then\n  SWIFTLINT=swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n  exit 0\nfi\ncd \"$SRCROOT\"\n\"$SWIFTLINT\" lint KensIOSApp\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

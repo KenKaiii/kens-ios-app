@@ -56,12 +56,19 @@ targets:
     preBuildScripts:
       - name: SwiftLint
         script: |
-          if which swiftlint > /dev/null; then
-            cd "$SRCROOT"
-            swiftlint lint KensIOSApp
+          # Check common installation paths for SwiftLint
+          if [ -f /opt/homebrew/bin/swiftlint ]; then
+            SWIFTLINT=/opt/homebrew/bin/swiftlint
+          elif [ -f /usr/local/bin/swiftlint ]; then
+            SWIFTLINT=/usr/local/bin/swiftlint
+          elif which swiftlint > /dev/null; then
+            SWIFTLINT=swiftlint
           else
             echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+            exit 0
           fi
+          cd "$SRCROOT"
+          "$SWIFTLINT" lint KensIOSApp
         basedOnDependencyAnalysis: false
 
   KensIOSAppTests:
